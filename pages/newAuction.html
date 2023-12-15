@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bits and Bids | Create New Auction</title>
+    <script src="../src/newAuction.js" defer type="module"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+ <header class="header" id="header"></header>
+ <div class="content-wrapper">
+ <h1>Add New Auction</h1>
+ <form id="newAuctionForm" class="newAuctionForm">
+    <div class="mb-3">
+      <label for="title" class="form-label">Auction Title</label>
+      <input type="text" class="form-control" id="title" name="title" required>
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Auction Description</label>
+      <textarea class="form-control" id="description" name="description"></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="tags" class="form-label">Category(s)</label>
+      <input type="text" class="form-control" id="tags" name="tags">
+    </div>
+    <div id="mediaInputs">
+        <div class="mb-3">
+          <label for="media1" class="form-label">Image URL</label>
+          <input type="text" class="form-control media" id="media1" name="media">
+        </div>
+      </div>
+      <button type="button" id="addMedia" class="btn btn-secondary mb-3">Add More Images</button>
+    <div class="mb-3">
+      <label for="endsAt" class="form-label">Auctions Ends At</label>
+      <input type="datetime-local" class="form-control" id="endsAt" name="endsAt" required>
+    </div>
+    <button type="submit" class="btn btn-secondary mb-2">Submit</button>
+    <div class="alert-message mt-2"></div>
+  </form>
+ </div>
+  <footer class="footer">
+    <div class="container">
+        <span>© 2022 Bits and Bids. All rights reserved.</span>
+    </div>
+    
+</footer>
+    
+</body>
+</html>

@@ -1,0 +1,16 @@
+.card-img-top {
+    object-fit: cover;
+    width: 100%;
+    height: 14rem; 
+  }
+
+.btn {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.auctionCard:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
