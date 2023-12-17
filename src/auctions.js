@@ -1,7 +1,7 @@
 import { initializeNavbar } from "./js/listeners/initializeNavbar.js";
-import { logoutListener } from './js/listeners/logoutListener.js';
-import { listAuctionsCheckbox} from "./js/listeners/listAuctionsCheckbox.js";
-import { setupOpenDetailsModalEventListener} from './js/listeners/setupOpenDetailsModalEventListener.js'; 
+import { logoutListener } from "./js/listeners/logoutListener.js";
+import { listAuctionsCheckbox } from "./js/listeners/listAuctionsCheckbox.js";
+import { setupOpenDetailsModalEventListener } from "./js/listeners/setupOpenDetailsModalEventListener.js";
 
 /**
  * Initializes the application.
@@ -9,8 +9,8 @@ import { setupOpenDetailsModalEventListener} from './js/listeners/setupOpenDetai
  * @returns {Promise<void>} A promise that resolves when the application has been initialized.
  */
 initializeNavbar().then(() => {
-    logoutListener();
-    listAuctionsCheckbox().then(() => {
-        setupOpenDetailsModalEventListener();
-    });
+  logoutListener();
+  listAuctionsCheckbox().then(() => {
+    setupOpenDetailsModalEventListener();
+  });
 });

@@ -1,6 +1,6 @@
 import { initializeNavbar } from "./js/listeners/initializeNavbar.js";
 import { LoginUserEventListener } from "./js/listeners/loginUser.js";
-import { logoutListener } from './js/listeners/logoutListener.js';
+import { logoutListener } from "js/listeners/logoutListener.js";
 
 /**
  * Initializes the application and sets up event listeners for user login and logout.
