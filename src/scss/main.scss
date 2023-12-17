@@ -1,0 +1,76 @@
+$secondary: #FF7F50;
+$background-color: #F2F2F2; 
+$text-color: #333333; 
+$tertiary: #003366;
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import './auctionFeed.scss';
+@import './navbar.scss';
+@import './modal.scss';
+@import './newAuction.scss';
+@import './myProfile.scss';
+
+:root {
+    --bs-body-font-family: 'Merriweather', serif;
+    --bs-body-color: #333333; 
+    --bs-body-bg: #F2F2F2; 
+    --bs-navbar-brand-color: #F2F2F2; 
+    --bs-link-color-rgb: 242, 242, 242; 
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content-wrapper {
+    flex: 1 0 auto;
+  }
+
+.hero {
+    background-color: #a7cfe6;
+    background-image: url('/src/images/heroImage.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 20rem; 
+    
+}
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .navbar, .btn {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #003366;
+    color: #F2F2F2;
+    text-align: center;
+    padding: 10px 0;
+    flex-shrink: 0;
+}
+
+body a {
+    color: $text-color; 
+}
+body a:hover {
+    color: $secondary; 
+    text-decoration: underline;
+}
+
+.h1index {
+    margin-top: 0.5em;
+}
